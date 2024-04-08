@@ -27,7 +27,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: build uefi for all devices in SurfaceDuo1Pkg.
-        run: bash scripts/ci_setup.sh && ./build_uefi.py -d all -p Sm8150
+        run: bash scripts/ci_setup.sh && ./build_uefi.py -d xiaomi-nabu -p Sm8150
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
